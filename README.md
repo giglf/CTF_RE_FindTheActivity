@@ -15,3 +15,6 @@ Everyone who access it can use it.
 But don't copy direct for some competition. The main purpose for this repository is studying.
 You can refer to this and add some ideas belong to yourself, to make this challenge more interesting and significant.
 If you meet some problem when you using this project. You can open some issues or just email me.
+
+# Write up
+http://blog.2bsticker.cn/2018/03/26/FindTheActivity%E5%87%BA%E9%A2%98%E8%AE%B0%E5%BD%95/
