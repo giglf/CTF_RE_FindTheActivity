@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "ctf.green.findtheactivity"
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                arguments '-DANDROID_STL=c++_static'
+            }
+        }
+        ndk{
+            abiFilters 'armeabi','armeabi-v7a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+}
+
+//删除dynamic.jar包任务
+
+task clearJar(type: Delete) {
+
+    delete('libs/check.jar')
+
+}
+
+//打包任务
+
+task makeJar(type: Jar) {
+
+//指定生成的jar名称
+
+    baseName 'check'
+
+//从哪里打包class文件
+
+    from('build/intermediates/classes/debug/ctf/green/findtheactivity/check')
+
+//打包到jar后的目录结构
+
+//    into('ctf/green/findtheactivity/')
+
+}
+
+
+makeJar.dependsOn(clearJar, build)

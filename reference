@@ -1,0 +1,11 @@
+google NativeActivity sample
+https://github.com/googlesamples/android-ndk/tree/master/native-activity
+
+intercept-activity
+http://weishu.me/2016/03/21/understand-plugin-framework-activity-management/
+
+dynamic load dex
+http://smarxpan.github.io/2016/04/07/%E4%B8%80%E4%B8%AA%E5%8F%AF%E5%BA%94%E7%94%A8%E7%9A%84%E5%8A%A8%E6%80%81%E5%8A%A0%E8%BD%BDdex%E5%AE%9E%E8%B7%B5/
+
+ARC4 source
+https://gist.github.com/nakagami/46b582fb491dd4c08769
