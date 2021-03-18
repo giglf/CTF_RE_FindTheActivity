@@ -17,4 +17,4 @@ You can refer to this and add some ideas belong to yourself, to make this challe
 If you meet some problem when you using this project. You can open some issues or just email me.
 
 # Write up
-http://blog.2bsticker.cn/2018/03/26/FindTheActivity%E5%87%BA%E9%A2%98%E8%AE%B0%E5%BD%95/
+http://giglf.github.io/2018/03/26/FindTheActivity%E5%87%BA%E9%A2%98%E8%AE%B0%E5%BD%95/
